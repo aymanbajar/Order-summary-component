@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e0e8ff;
+}
+.container{
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.image{
+    min-width: 300px;
+    padding: 0;
+    margin: 0;
+}
+.image img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+h1,p
+{
+    text-align: center;
+}
+p{
+    width: 300px;
+    margin-left: 60px;
+}
+.music{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #f8f9fe;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    }
+    .music h2{
+        position: absolute;
+        top: 0px;
+        left: 70px;
+        font-size: 20px;
+    }
+    .music a{
+        position: absolute;
+        right: 3px;
+        top: 25px;
+    }
+    .music h2::after{
+        content: '$59.99/year';
+        font-size: 18px;
+        position: absolute;
+        left: 5px;
+        top: 28px;
+        color: #949ab0;
+    }
+button{
+    width: 380px;
+    height: 30px;   
+    border-radius: 20px;
+    border: none;
+
+}
+#proceed{
+    background-color: #382ae1;
+    color: white;
+}
+#cancel{
+    background-color: #ffffff;
+    color: #828aa0  ;
+}
+@media (max-width:767px){
+    body{
+        padding-top: 150px;
+    }
+    .container{
+        width: 100%;
+        
+    }
+    button{
+        width: 350px;
+    }
+    p{
+        width: 350px;
+       position: relative;
+       right: 57px;
+    }
+    
+    .music a{
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+}
